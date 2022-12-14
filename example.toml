@@ -1,0 +1,19 @@
+[server]
+ENV = "dev"
+LogFile = "/"
+LogRotate = 14
+
+
+[App]
+Port = 8080
+
+[Log]
+Path = "logs/"
+MaxAge = 7
+Level = "debug"
+
+[database]
+Dialect = "mysql"
+ConnectionString = "root:new-password@/jetdev_task?charset=utf8&parseTime=True&loc=Local"
+LogMode = true
+
